@@ -1,0 +1,847 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
+}
+html {
+
+    scroll-behavior: smooth;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+.title {
+    font-size: 30px;
+    color: #454545;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    padding: 10px 0;
+    font-weight: bold;
+    position: relative;
+}
+.title::before {
+    position: absolute;
+    content: '';
+    width: 100px;
+    background-color: #31bfc3;
+    height: 3px;
+    left: 0;
+    bottom: 0;
+}
+.services .title,
+.port .title,
+.team .title,
+.price .title,
+.contact .title {
+    width: fit-content;
+    margin: auto;
+    padding-top: 80px;
+}
+.services .title::before,
+.port .title::before,
+.team .title::before,
+.price .title::before,
+.contact .title::before {
+    left: 25%;
+}
+/**Start Header*/
+header {
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    z-index: 5159165189165184;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.329);
+}
+header .container {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+header .container ul {
+    display: flex;
+    align-items: center;
+}
+header .container ul a {
+    display: inline-block;
+    padding: 10px 13px;
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: .5s;
+}
+header .container ul a:hover {
+    color: #31bfc3 ;
+}
+header .container img {
+    width: 140px;
+}
+/*End Header**/
+
+/*Start Main**/
+main {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+main .image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    top: 0;
+}
+main .image img {
+    width: 100%;
+    height: 100%;
+    filter: brightness(.3);
+}
+main .text {
+    text-align: center;
+    color: white;
+}
+main .text h2 {
+    font-size: 50px;
+    padding-bottom: 30px;
+}
+main .text p {
+    text-align: center;
+    width: 60%;
+    margin: auto;
+    line-height: 1.5;
+    font-size: 16px;
+}
+main .text a {
+    display: inline-block;
+    color: white;
+    background-color: #31bfc3;
+    padding: 13px 30px;
+    margin: 20px 0;
+    transition: .5s;
+}
+main .text a:hover {
+    background-color: #0495d6;
+}
+/*End Main**/
+
+/*Start About Section**/
+.about .container {
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    padding-top: 100px;
+}
+.about .container .text p {
+    padding: 20px 0;
+    line-height: 1.6;
+    color: #666;
+    font-size: 15px;
+    width: 80%;
+}
+.about .container .text .second {
+    padding-top: 15px;
+}
+.about .container .text a {
+    display: inline-block;
+    color: white;
+    padding: 13px 20px;
+    background-color: #31bfc3;
+    transition: .4s;
+    margin-bottom: 30px;
+}
+.about .container .text a:hover {
+    background-color: #0495d6;
+}
+/*End About Section**/
+
+/*Start Provide Section**/
+.provide {
+    padding: 80px 0;
+    background-color: #f8f9fa;
+}
+.provide .container {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.provide .container .image {
+    width: 35%;
+}
+.provide .container .image img {
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 20px 40px rgb(0 0 0 / 20%);
+    border-radius: 7px;
+}
+.provide .container .text {
+    width: 58%;
+}
+.provide .container .text h2 {
+    font-size: 35px;
+    font-weight: bold;
+    position: relative;
+    padding: 15px 0;
+}
+.provide .container .text h2 span {
+    color: #31bfc3;
+}
+.provide .container .text h2::before {
+    content: '';
+    position: absolute;
+    width: 120px;
+    height: 4px;
+    left: 0;
+    bottom: 0;
+    background-color: #31bfc3;
+}
+.provide .container .text .content{
+    color: #999;
+    padding: 40px 0;
+    line-height: 1.6;
+}
+.provide .container .text .check div {
+    display: flex;
+    margin: 10px 0;
+}
+.provide .container .text .check div i {
+    color: #31bfc3;
+}
+.provide .container .text .check div p {
+    font-weight: bold;
+    padding: 0 10px;
+}
+.provide .container .text .icons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 70px;
+    text-align: center;
+}
+.provide .container .text .icons div {
+    position: relative;
+}
+.provide .container .text .icons div::after {
+    content: '';
+    position: absolute;
+    background-color: rgba(0,0,0,.1);
+    top: 30%;
+    width: 100%;
+    height: 3px;
+    right: -100%;
+}
+.provide .container .text .icons div:last-child {
+    overflow: hidden;
+}
+.provide .container .text .icons i {
+    font-size: 40px;
+    color: #31bfc3;
+    padding: 0 0 15px 0;
+}
+.provide .container .text .icons p {
+    font-weight: bold;
+}
+/*End Provide Section**/
+
+/*Start Services Section**/
+.services .cards {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0 80px;
+}
+.services  .cards .card {
+    width: calc(100% / 4 -30px);
+    text-align: center;
+    transition: .4s;
+}
+.services .cards .card i {
+    font-size: 30px;
+    color: #31bfc3;
+    padding-top: 10px;
+}
+.services .cards .card:hover {
+    box-shadow: 0 0 20px rgb(0 0 0 / 10%);
+}
+.services .cards .card h2 {
+    text-transform: uppercase;
+    padding: 30px 0 20px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .4s;
+}
+.services .cards .card:hover h2 {
+    color: #31bfc3;
+}
+.services .cards .card p {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.4;
+    width: 80%;
+    margin: auto;
+    padding: 10px 0 20px;
+}
+/*End Services Section**/
+
+/*Start Call Section**/
+.call {
+    padding: 60px 0;
+    background-color: #31bfc3;
+}
+.call .container {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+.call .container h2 {
+    font-size: 30px;
+}
+.call .container a {
+    padding: 15px 20px;
+    background-color: white;
+    color: #31bfc3;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+    transition: .6s;
+}
+.call .container a:hover {
+    background-color: black;
+    color: white;
+}
+/*End Call Section**/
+
+/*Start Portofolio Section**/
+.port .images {
+    display: flex;
+    flex-wrap: wrap;
+    width: 85%;
+    margin: auto;
+    padding: 60px 0;
+}
+.port .images .image {
+    width: calc(100% / 3 - 40px);
+    margin: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.port .images .image p {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    align-items: center;
+    color: white;
+    font-size: 25px;
+    z-index: 20;
+    background-color: black;
+    text-align: center;
+    line-height: 1.6;
+    transform: scale(.8);
+    opacity: 0;
+}
+.port .images .image p span {
+    font-size: 16px;
+}
+.port .images .image img {
+    width: 100%;
+}
+.port .images .image:hover p {
+    animation: pop linear .3s forwards;
+}
+@keyframes pop {
+    100% {
+        transform: scale(1.05);
+        opacity: .7;
+    }
+}
+/*End Portofolio Section**/
+
+/*Start Skills Section**/
+.skills {
+    background-color: #f8f9fa;
+}
+.skills .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 85%;
+    margin: auto;
+    padding-top: 80px;
+}
+.skills .container .left-side {
+    width: 30%;
+}
+.skills .container .left-side .title {
+    text-align: end;
+}
+.skills .container .left-side .title::before {
+    left: 70%;
+}
+.skills .container .left-side div {
+    margin: 0 0 60px 0;
+}
+.skills .container .left-side p {
+    text-align: end;
+    font-weight: 600;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #666;
+    margin:10px 0 ;
+}
+.skills .container .left-side .avg{
+    width: 100%;
+    height: 15px;
+    border-radius: 20px;
+    background-color: #e9ecef;
+    position: relative;
+    overflow: hidden;
+}
+.skills .container .left-side .avg::before {
+    position: absolute;
+    height: 100%;
+    left: 0;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    background-color: #31bfc3;
+}
+.skills .container .left-side .avg.one::before {
+    content: "80%";
+    width: 80%;
+}
+.skills .container .left-side .avg.two::before {
+    content: "70%";
+    width: 70%;
+}
+.skills .container .left-side .avg.three::before {
+    content: "85%";
+    width: 85%;
+}
+.skills .container .left-side .avg.four::before {
+    content: "67%";
+    width: 67%;
+}
+.skills .container .left-side .avg.five::before {
+    content: "74%";
+    width: 74%;
+}
+.skills .container .left-side .avg.six::before {
+    content: "80%";
+    width: 80%;
+}
+.skills .container .image {
+    width: 30%;
+}
+.skills .container .image img {
+    width: 100%;
+}
+.skills .container .right-side {
+    width: 30%;
+}
+.skills .container .right-side .title {
+    color: #666;
+    font-size: 23px;
+}
+.skills .container .right-side .box{
+    padding-top: 50px;
+}
+.skills .container .right-side .box .card {
+    display: flex;
+    margin: 0 5px 20px;
+    padding: 10px;
+}
+.skills .container .right-side .box .card .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #31bfc3;
+    margin-right: 40px;
+}
+.skills .container .right-side .box .card .icon i {
+    font-size: 40px;
+}
+.skills .container .right-side .box .card h2 {
+    font-size: large;
+    color: #666;
+    font-weight: 600;
+    padding: 0 0 10px;
+}
+.skills .container .right-side .box .card p {
+    line-height: 1.4;
+}
+/*End Skills Section**/
+
+/*Start Team Section**/
+.team .cards {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+.team .cards .card {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    box-shadow: 0px 0px 3px 1px rgb(0 0 0 / 9%);
+}
+.team .cards .card .image {
+    width: 100%;
+    margin: 20px auto 30px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.team .cards .card .image img {
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+    margin: auto;
+}
+.team .cards .card .text h2 {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 10px 0;
+    font-weight: bold;
+    font-size: 20px;
+}
+.team .cards .card .text p {
+    font-size: 18px;
+    font-weight: 400;
+    color: #31bfc3;
+    margin-bottom: 10px;
+}
+.team .cards .card .text .social-icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 10px;
+}
+.team .cards .card .text .social-icons div {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 1px solid #31bfc3;
+    color: #31bfc3;
+    display: flex;
+    justify-content: center;
+    align-items: center; margin: 10px ;
+    transition: .5s;
+}
+.team .cards .card .text .social-icons div i {
+    transition: .5s;
+}
+.team .cards .card:hover .social-icons div{
+    background-color: #31bfc3;
+}
+.team .cards .card:hover i {
+    color: white;
+}
+/*End Team Section**/
+
+/*Start Price Section**/
+.price {
+    background-color: #F6F6F6;
+}
+.price .cards {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0;
+}
+.price .cards .card {
+    width: calc(100% / 3 - 40px);
+    box-shadow: 0 5px 5px 0 rgb(0 0 0 / 20%);
+    text-align: center;
+    position: relative;
+    transition: 1s;
+    border: 1px solid transparent;
+}
+.price .cards .card:hover {
+    border-color: #31bfc3;
+}
+.price .cards .card .top {
+    height: 150px;
+    width: 70%;
+    margin: auto;
+    background-color: #31bfc3;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -10px;
+    position: relative;
+}
+.price .cards .card .top span{
+    font-size: 25px;
+    font-weight: 600;
+}
+.price .cards .card .top::before , 
+.price .cards .card .top::after {
+    content: '';
+    position: absolute;
+    border: 6px solid #1cb580;
+    top: 0;
+}
+.price .cards .card .top::before {
+    left: -12px;
+    border-left-color: transparent;
+    border-top-color: transparent;
+}
+.price .cards .card .top::after {
+    right: -12px;
+    border-right-color: transparent;
+    border-top-color: transparent;
+    
+}
+.price .cards .card .body {
+    padding-top: 60px;
+}
+.price .cards .card .body p {
+    padding: 15px 0;
+    color: #334a6b;
+    font-size: 14px;
+    font-weight: 400;
+} 
+.price .cards .card .body a {
+    display: inline-block;
+    color: white;
+    background-color: #31bfc3;
+    padding: 15px 40px;
+    text-align: center;
+    margin: 20px 0;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+/*End Price Section**/
+
+/*Start Counter Section**/
+.counter {
+    position: relative;
+    height: 270px;
+}
+.counter .container {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 0;
+    color: white;
+    text-align: center;
+}
+.counter .container i {
+    color: #31bfc3;
+    padding: 10px;
+    text-align: center;
+    font-size: 40px;   
+}
+.counter .container h3 {
+    font-size: 30px;
+    padding: 15px 0 10px;
+}
+.counter img {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    filter: brightness(.25);
+}
+.counter .container p {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 15px;
+}
+/*End Counter Section**/
+
+/*Start Contact Section**/
+.contact .container {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    padding: 50px 0;
+}
+.contact .container form {
+    width: 300px;
+    background-color: #31bfc3;
+    padding-left: 10px;
+}
+.contact .container form label {
+    display: block;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 30px 10px 10px;
+}
+.contact .container form input {
+    width: 80%;
+    margin: auto;
+    margin-left: 10px;
+    padding: 7px 5px;
+    outline: 0;
+    border: 1px solid white;
+    border-radius: 4px;
+    background-color: transparent;
+}
+.contact .container form button {
+    display: block;
+    margin: 40px 10px 20px;
+    color: #31bfc3;
+    background-color: white;
+    text-transform: uppercase;
+    padding: 15px 30px;
+    text-align: center;
+    border: 0;
+    outline: 0;
+    font-weight: 600;
+    font-size: 17px;
+    transition: .5s;
+    border: 1px solid transparent;
+}
+.contact .container form button:hover {
+    background-color: #31bfc3;
+    color: white;
+    border: 1px solid white;
+}
+.contact .container .cards {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 100px;
+    width: 70%;
+}
+.contact .container .cards .card {
+    height: fit-content;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.192);
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: .7s;
+}
+.contact .container .cards .card:hover {
+    transform: scale(1.1);
+}
+.contact .container .cards .card .icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #31bfc3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin: 20px 10px;
+    font-size: 25px;
+    transition: .5s;
+    border: 1px solid transparent;
+}
+.contact .container .cards .card:hover .icon {
+    background-color: white;
+    color: #31bfc3;
+    border-color: #31bfc3;
+}
+.contact .container .cards .card p {
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px 0 20px;
+    letter-spacing: 1px;
+    text-align: start;
+}
+/*End Contact Section**/
+
+/*Start Footer**/
+footer {
+    background-color: black;
+    height: 100px;
+}
+footer .container {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    height: 100%;
+}
+footer .container .social-icons {
+    display: flex;
+    align-items: center;
+}
+footer .container .social-icons div {
+    margin: 0 10px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    font-size: 16px;
+    transition: .5s;
+    cursor: pointer;
+}
+footer .container .social-icons div:hover {
+    border-color: transparent;
+}
+footer .container .social-icons div:first-child:hover {
+    background-color: #3b5998;
+}
+footer .container .social-icons div:nth-child(2):hover {
+    background-color: #55acee;
+}
+footer .container .social-icons div:nth-child(3):hover {
+    background-color: #dd4b39;
+}
+footer .container .social-icons div:nth-child(4):hover {
+    background-color: #007bb5;
+}
+footer .social-icons div:last-child  {
+    margin-right: -50px;
+}
+footer .social-icons div:last-child a{
+    color: #31bfc3;
+}
+footer .container h4 span {
+    color: #55acee;
+    font-size: 30px;
+    letter-spacing: 2px;
+    margin: 0 5px;
+}
+/*End Footer**/
